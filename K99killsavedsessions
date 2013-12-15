@@ -1,0 +1,9 @@
+#! /bin/sh
+
+# this script prevents xfce from relaunching applications that were open during the previous shutdown
+# put this in  /etc/rc6.d/ for reboots
+# or /etc/rc0.d/ for shutdown
+
+
+current_user=$(who -m | awk '{print $1;}')
+rm -r /home/$current_user/.cache/sessions/*
