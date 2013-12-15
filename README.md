@@ -1,4 +1,4 @@
 annoyance-fixes
 ===============
 
-Various fixes for annoyances that show up in Linux projects
+Various fixes for annoyances in the xfce desktop
